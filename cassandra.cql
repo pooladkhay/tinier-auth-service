@@ -1,0 +1,1 @@
+CREATE TABLE users (name TEXT, email TEXT, password TEXT, created_at TIMESTAMP, PRIMARY KEY (email));

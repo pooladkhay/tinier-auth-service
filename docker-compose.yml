@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+   tinier-auth-service:
+      build: .
+      ports:
+         - "3011:3011"
+      restart: always
+      environment: 
+         - CASSANDRA_URL=23.234.197.146
+         - CASSANDRA_KEYSPACE=tinier
+         - CASSANDRA_USERNAME=cassandra
+         - CASSANDRA_PASSWORD=cassandra3
+         - PORT=3011
+         - USER_JWT_SECRET=habE1zf5LqZKExa5LqZnesRvN5DEUfKM32lYnsXGAbUfKE1zM32oM0vqGgkstcTBgCBQmQ0dNodO
